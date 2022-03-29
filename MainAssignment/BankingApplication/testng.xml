@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Needs.Listener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="C:/Users/omcv/IdeaProjects/BankingApplication/src/test/java/tests" parallel = "classes" thread-count = "3">
+        <classes><class name="tests.AddCustomerTest">
+            <methods><include name="addingCustomer"/>
+            </methods>
+        </class>
+            <class name="tests.TransactionVerificationTest">
+            <methods><include name="transactionVerify"/>
+            </methods>
+        </class>
+            <class name="tests.DepositeTest">
+                <methods>
+                <include name="deposit"/>
+                </methods>
+            </class>
+            <class name="tests.OpenAccountTest">
+                <methods>
+                    <include name="openAccount"/>
+                </methods>
+            </class>
+            <class name="tests.WithdrawMoreTest">
+                <methods>
+                    <include name="withdrawMore"/>
+                </methods>
+            </class>
+            <class name="tests.WithdrawlTest">
+                <methods>
+                    <include name="withdrawl"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

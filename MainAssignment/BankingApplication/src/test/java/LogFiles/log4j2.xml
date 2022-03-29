@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Loggers>
+        <logger name="tests.AddCustomerTest" level = "trace">
+        </logger>
+
+        <logger name="tests.OpenAccountTest" level="trace">
+        </logger>
+
+        <logger name="tests.DepositeTest" level="trace">
+        </logger>
+
+        <logger name="tests.WithdrawlTest" level="trace">
+        </logger>
+
+        <logger name="tests.WithdrawMoreTest" level="trace">
+        </logger>
+
+        <logger name="tests.TransactionVerificationTest" level="trace">
+        </logger>
+
+        <Root level="trace">
+            <AppenderRef ref="Console" level="trace" />
+        </Root>
+    </Loggers>
+</Configuration>
